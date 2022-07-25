@@ -1,0 +1,38 @@
+https://www.kaggle.com/shawamar/product-recommendation-system-for-e-commerce
+https://www.kaggle.com/lthhngthm/hdp-search-relevance
+contest in bookmarks
+
+Model-based collaborative filtering system
+Recommend items to users based on "purchase history" and "similarity" of ratings provided
+by other users who bought items to that of a particular customer.
+
+
+The product recommendations can be based on textual clustering analysis given in product
+description.
+
+*Feature extraction from product descriptions:
+ - Converting the text in product description into numerical data for analysis:
+ https://www.kaggle.com/shawamar/product-recommendation-system-for-e-commerce In[22]
+
+donot forget preprocesing:
+- remove additional words and unrelated
+- check word by word
+- use description and clean tag, remove_html_tag,split number from word,... : https://www.kaggle.com/lthhngthm/hdp-search-relevance In[29]
+
+idea 1 : use vector like the link(TfidfVectorizer used TF-IDF algorithm)
+idea 2 : use code characters ( hard for test)
+idea 3 : convert to english letters
+idea 4 : study papers
+idea 5 : use textdistance(just compare appearantly two strings)
+
+try 1 : CNN for pictures be converted
+try 2 : any classifications like k-means(is best when your dataset is big!(test it with descriptions))
+
+
+DB:
+refrence id = school id
+
+
+K in k-means:
+If we increase the number of clusters, the computation cost will also increase. So, if you do not have high computational resources, my advice is to choose a lesser number of clusters
+https://www.analyticsvidhya.com/blog/2019/08/comprehensive-guide-k-means-clustering/
