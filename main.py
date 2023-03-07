@@ -44,7 +44,7 @@ TAG_COEFFICIENT_COMPARED_TO_DESCRIPTION = 3
 # cursor=con.cursor()
 
 def getSourceFileFromDB():  # Incompleted
-  query = "SELECT ut.id,ut.subject FROM `users_tracking_activity_log` as ut WHERE 1 LIMIT 10;"
+  query = "SELECT ut.id,ut.subject FROM `(Censored name of table)` as ut WHERE 1 LIMIT 10;"
   cursor.execute(query)
   table = cursor.fetchall()
   df = pd.DataFrame (table, columns = ['id','subject'])
