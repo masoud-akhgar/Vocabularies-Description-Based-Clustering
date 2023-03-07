@@ -10,9 +10,9 @@ from hazm import *
 import sys
 import urllib.parse
 from main import PredictionWords
-con = mysql.connector.connect(host="localhost", user="masoud",password="m", database="Nikaro",auth_plugin='mysql_native_password')
+con = mysql.connector.connect(host="Censored", user="Censored",password="Censored", database="Censored",auth_plugin='Censored')
 cursor=con.cursor()
-query = "SELECT ut.id,ut.subject,ut.url,ut.user_id,ut.parameters,ut.created_at FROM `users_tracking_activity_log` as ut WHERE 1;"
+query = "SELECT ut.id,ut.subject,ut.url,ut.user_id,ut.parameters,ut.created_at FROM `Censored` as ut WHERE 1;"
 cursor.execute(query)
 table = cursor.fetchall()
 df = pd.DataFrame (table, columns = ['id','subject','url','user_id','parameters','created_at'])
