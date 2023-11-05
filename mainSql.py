@@ -1,5 +1,5 @@
 import re
-import mysql.connector
+import psycopg2
 from parsivar import Normalizer, FindStems, POSTagger
 from collections import Counter
 from SchoolIdClass import SchoolId
@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 from hazm import *
 import sys
 import urllib.parse
+import mysql.connector
 from main import PredictionWords
 con = mysql.connector.connect(host="Censored", user="Censored",password="Censored", database="Censored",auth_plugin='Censored')
 cursor=con.cursor()
