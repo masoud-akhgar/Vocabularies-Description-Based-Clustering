@@ -8,6 +8,7 @@ the **final output ** is to answer several questions after all process (scrappin
 - what are the most possible words to be searched?
 - number of occurance of a word in searches related to flower-store-category for example?
 - filter answers based on location and time
+- similar words to a given word?
 
 - --------------
 
